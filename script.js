@@ -20,14 +20,16 @@ billInput.addEventListener("change", () => {
         document.querySelector(".bill-div").classList.add("hidden")
         // billInput.style.outline="0.125rem solid red;"
         document.querySelector(".red-div").classList.remove("hidden")
-        billInput.style.outline="0.125rem solid red"
+        billInput.classList.add("red-outline")
+        billInput.classList.remove("input")
         document.querySelector(".tip-value").innerHTML = "$0.00"
         document.querySelector(".total-value").innerHTML = "$0.00"
     } else {
         document.querySelector(".bill-div").classList.remove("hidden")
         // billInput.style.outline="0.125rem solid red;"
         document.querySelector(".red-div").classList.add("hidden")
-        billInput.style.outline="0.125rem solid hsl(172deg, 67%, 45%)"
+        billInput.classList.remove("red-outline")
+        billInput.classList.add("input")
     }
 
     //setting the output
@@ -191,14 +193,18 @@ numberOfPeople.addEventListener("change", () => {
         document.querySelector(".number-of-people-div").classList.add("hidden")
         // billInput.style.outline="0.125rem solid red;"
         document.querySelector(".red-div-2").classList.remove("hidden")
-        numberOfPeople.style.outline="0.125rem solid red"
+        numberOfPeople.classList.add("red-outline")
+        numberOfPeople.classList.remove("input")
+        // numberOfPeople.style.outline="0.125rem solid red"
         document.querySelector(".tip-value").innerHTML = "$0.00"
         document.querySelector(".total-value").innerHTML = "$0.00"
     } else {
         document.querySelector(".number-of-people-div").classList.remove("hidden")
         // billInput.style.outline="0.125rem solid red;"
         document.querySelector(".red-div-2").classList.add("hidden")
-        numberOfPeople.style.outline="0.125rem solid hsl(172deg, 67%, 45%)"
+        // numberOfPeople.style.outline="0.125rem solid hsl(172deg, 67%, 45%)"
+        billInput.classList.remove("red-outline")
+        numberOfPeople.classList.add("input")
     }
 })
 
@@ -224,12 +230,16 @@ resetBtn.addEventListener("click", () => {
     //no red border on first input
     document.querySelector(".bill-div").classList.remove("hidden")
     document.querySelector(".red-div").classList.add("hidden")
-    billInput.style.outline="none"
+    // billInput.style.outline="none"
+    billInput.classList.remove("red-outline")
+    billInput.classList.add("input")
     
     //no red border on second input
     document.querySelector(".number-of-people-div").classList.remove("hidden")
     document.querySelector(".red-div-2").classList.add("hidden")
-    numberOfPeople.style.outline="none"
+    // numberOfPeople.style.outline="none"
+    numberOfPeople.classList.remove("red-outline")
+    numberOfPeople.classList.add("input")
 })
 
 
