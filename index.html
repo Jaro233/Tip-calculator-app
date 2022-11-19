@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="title">
+      SPLITTER
+    </div>
+    <div class="container">
+      <div class="selection-side">
+        <div class="bill-amount">
+          <div class="bill-text bill-div">
+            <p class="text">Bill</p>
+          </div>
+          <div class="bill-text red-div hidden">
+            <p class="text">Bill</p>
+            <p class="text red-text">Can't be zero</p>
+          </div>
+          <div class="bill-value">
+            <input placeholder="0" type="text" class="bill-input input" name="" id="">
+          </div>
+        </div>
+        <div class="tip-selection">
+          <div class="tip-title">
+            <p class="text">Select Tip %</p>
+          </div>
+          <div class="tip five-percent">5%</div>
+          <div class="tip ten-percent">10%</div>
+          <div class="tip fifteen-percent">15%</div>
+          <div class="tip twentyFive-percent">25%</div>
+          <div class="tip fifty-percent">50%</div>
+          <div class="tip custom">
+            <input type="text" placeholder="Custom" class="custom-input input" name="" id="">
+          </div>
+        </div>
+        <div class="number-of-people">
+          <div class="number-of-people-text number-of-people-div">
+            <p class="text">Number of people</p>
+          </div>
+          <div class="number-of-people-text red-div-2 hidden">
+            <p class="text">Number of people</p>
+            <p class="text red-text">Can't be zero</p>
+          </div>
+          <div class="number-of-people-value">
+            <input type="text" placeholder="0" class="number-of-people-input input" name="" id="">
+          </div>
+        </div>
+      </div>
+      <div class="output-side">
+        <div class="tip-amount amount-div">
+          <div class="tip-amount-text">
+            <p class="up-text">
+              Tip Amount 
+            </p>
+            <p class="down-text">/ person</p>
+          </div>
+          <div class="tip-amount-value">
+            <div class="value tip-value">$0.00</div>
+          </div>
+        </div>
+        <div class="total-amount amount-div">
+          <div class="total-amount-text">
+            <p class="up-text">
+              Total 
+            </p>
+            <p class="down-text">/ person</p>
+          </div>
+          <div class="total-amount-value">
+            <div class="value total-value">$0.00</div>
+          </div>
+        </div>
+        <div class="reset-btn">
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

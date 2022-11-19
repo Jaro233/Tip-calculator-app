@@ -1,0 +1,87 @@
+@import "./variables";
+@import "./input_side";
+@import "./output_side";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    background-color: $LightGrayishCyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 100%;
+    height: 100%;
+    max-height: 43.75rem;
+}
+
+.container {
+    background-color: $White;
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    padding: 1.2rem;
+    max-width: 44rem;
+}
+
+@media screen and (min-width: 750px) {
+
+   .selection-side {
+        width: 100%;
+        // max-width: 35rem;
+   }
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2.5rem;
+        border-radius: 0.9375rem;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        padding-left: 2rem;
+    }
+
+    .output-side {
+        margin-top: 0;
+        max-width: 25rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+
+    .reset-btn {
+        margin-top: auto;
+    }
+
+    .tip-selection {
+        grid-template-areas: 
+        "title title title"
+        "five ten fifteen"
+        "twentyFive fifty custom";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .custom-input {
+        font-size: 1.375rem;
+        padding: 0;
+        padding-right: 0.5125rem;
+    }
+
+    .value {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+
+} 
