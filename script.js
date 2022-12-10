@@ -9,7 +9,7 @@ let resetBtn = document.querySelector(".reset-btn")
 
 //billInputs
 
-billInput.addEventListener("change", () => {
+billInput.addEventListener("input", () => {
     billValue = billInput.value
     resetBtn.style.opacity = "1"
     document.querySelector(".reset").style.cursor = "pointer"
@@ -149,7 +149,7 @@ document.querySelectorAll(".tip").forEach((tip) => {
 //cunstomInput
 
 let customInput = document.querySelector(".custom-input")
-customInput.addEventListener("change", () => {
+customInput.addEventListener("input", () => {
     tipValue = customInput.value
     resetBtn.style.opacity = "1"
     document.querySelector(".reset").style.cursor = "pointer"
@@ -175,7 +175,7 @@ console.log('tipValue', tipValue)
 
 //numberOfPeople input nad finall output
 
-numberOfPeople.addEventListener("change", () => {
+numberOfPeople.addEventListener("input", () => {
     //setting the output
     numberOfPeopleValue = numberOfPeople.value
     console.log('numberOfPeopleValue', numberOfPeopleValue)
